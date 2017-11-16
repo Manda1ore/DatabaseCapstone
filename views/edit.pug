@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  form(id='form', method='post', action='/edit/' + person.id)
+    label(for='name') Name: 
+    input(type='text', name='name' value=person.name)
+    br
+    label(for='age') Age: 
+    input(type='text', name='age' value=person.age)
+    br
+    label(for='species') Species:
+    select(name='species')
+      option(selected = person.species) #{person.species}
+
+      option(value="Human") Human
+      option(value="Vampire") Vampire
+      option(value="Werewolf") Werewolf
+      option(value="Zombie") Zombie
+    br 
+    label(for='description') Description: 
+    input(type='text', name='description' value=person.description)
+    br
+    label(for='gender') Gender: 
+    select(name='gender')
+      option(selected = person.gender) #{person.gender}
+      option(value="Male") Male
+      option(value="Female") Female
+    br
+    input(type='submit', value='Update Person')

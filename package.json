@@ -1,0 +1,25 @@
+{
+  "name": "databasecapstone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mongoose": "^4.13.3",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manda1ore/DatabaseCapstone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Manda1ore/DatabaseCapstone/issues"
+  },
+  "homepage": "https://github.com/Manda1ore/DatabaseCapstone#readme"
+}
