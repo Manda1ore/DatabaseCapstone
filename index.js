@@ -2,8 +2,11 @@ var express = require('express'),
   pug = require('pug'),
   path = require('path'),
   route = require('./routes/routes.js'),
-  bodyParser = require('body-parser');
+  bodyParser = require('body-parser'),
+  mongoose = require('mongoose');
 
+
+mongoose.connect("mongodb://admin:Neukeadus44@ds029705.mlab.com:29705/capstone-services")
 var app = express();
 app.post(path, (req, res) => {
   const stripe_version = req.query.api_version;
