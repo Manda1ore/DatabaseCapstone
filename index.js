@@ -44,5 +44,5 @@ app.post(path, (req, res) => {
 //app.post('/create', urlencodedParser, route.createPerson);
 //app.post('/edit/:id', urlencodedParser, route.editPerson);
 //app.get('/delete/:id', route.delete);
-
-app.listen(3000);
+var PORT = process.env.PORT || 3000
+app.listen(PORT);
